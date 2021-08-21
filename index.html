@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Myportfolio</title>
+    </head>
+    <body>
+        <section id="header">
+            <div class="container">
+                <img src="images/logo.png" class="logo" alt="logo" width="200px">
+            </div>
+            <div class="header-text">
+                <h1>Welcome to my Page</h1>
+                <h2> Lets Get Started</h2>
+                <p> ONI OLUMIDE is a web developer</p>
+
+                <button type="button" class="button">Read More</button>
+            </div>
+            
+        </section>
+        <nav id="side-nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about-me">ABOUT US</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#contact-me">CONTACT</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-toggle" id="menu-toggle">
+        <button onclick="topFunction()"id="back-to-top">&#8593;</button>
+        <script type="text/javascript">
+            var menu_toggle = document.getElementById("menu-toggle")
+            var side_nav = document.getElementById("side-nav")
+            side_nav.style.right = "-250px";
+            menu_toggle.onclick = function(){
+                if(side_nav.style.right == "-250px"){
+                    side_nav.style.right = "0"
+                }else{
+                    side_nav.style.right = "-250px";
+                }
+            }
+            let backToTop = document.getElementById("back-to-top");
+
+            window.onscroll = function(){
+              scrollFunction();
+            }
+
+
+              function scrollFunction(){
+            if (document.documentElement.scrollTop > 20){
+                backToTop.style.visibility = "visible";
+                } else {
+                backToTop.style.visibility = "hidden";
+            }
+                }
+
+             function topFunction(){
+    document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <div class="intro">
+            <h2>About Us</h2>
+            <span></span>
+        </div>
+
+        <section id="about-me">
+            <div class="about-me-row">
+                <div class="about-me-col">
+                    <img src="images/abt.jpg" alt="image">
+                </div>
+                <div class="about-me-col">
+                    <div class="about-me-text">
+                        <div class="text-1">....be youserlf always, no matter the situation
+                        <p> Two roads diverged in a yellow wood,
+                            And sorry I could not travel both
+                            And be one traveler, long I stood
+                            And looked down one as far as I could
+                            To where it bent in the undergrowth;
+
+                            Then took the other, as just as fair,
+                            And having perhaps the better claim,
+                            Because it was grassy and wanted wear;
+                            Though as for that the passing there
+                            Had worn them really about the same,
+
+                            And both that morning equally lay
+                            In leaves no step had trodden black.
+                            Oh, I kept the first for another day!
+                            Yet knowing how way leads on to way,
+                            I doubted if I should ever come back.</p>
+                        </div>
+                    <button>Learn More</button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="service">
+            <div class="intro">
+                <h2>Services</h2>
+                <span></span>
+            </div>
+
+            <div class="service">
+                <div class="service-text">
+                    <p>We offer varieties of services such as Web Design and Software developement.</p>
+                </div>
+                <div class="image-container">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="images/services.jpg">
+                            <h3>Design</h3>
+                            <p></p>
+                            <button>Learn More</button>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/services.jpg">
+                            <h3>Code Testing</h3>
+                            <p></p>
+                            <button> learn more</button>
+                        </div>
+                        <div class="col-3">
+                            <img src="images/services.jpg">
+                            <h3>System Analysis</h3>
+                            <p></p>
+
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="intro">
+            <h2>Contact Us</h2>
+            <span></span>
+        </div> 
+        <section id="contact-me"> 
+            <div class="contact-me-col">
+                <h3>We are never too busy for you</h3>
+            
+            
+
+                  
+                <div id="form-field">
+                  <div class="input-field">
+                       <input type="text" placeholder="Enter your name">
+                       </div>
+                       <div class="input-field">
+                       <input type="email" placeholder="Enter your email">
+                       </div>
+                  
+                       <textarea id="w3review" name="w3review" rows="10" cols="72">
+                       </textarea>
+                    </div>   
+                </div>
+                    <button class="contact-btn">Submit</button> 
+
+            </div>        
+                <div class="contact-me-col">
+                    <div class="contact-me-row">
+                    <div class="contact-me-img">
+                    <img src="images/contact.png" alt="image">
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="row-footer">
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>Blog</li>
+                            <li>Contact Us <i class="fa fa-address-book-o"></i></li>
+                            <li>Return Policy <i class="fa fa-reply"></i></li>
+                            <li>Payment <i class="fa fa-money"></i></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Telephone &#x260F;</li>
+                        <li>Email &#x2709;</li>
+                        <li>Linkedln <i class="fa fa-linkedin"></i></li>
+                        <li>Working Hours <i class="fa fa-clock-o"></i></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li>Facebook <i class="fa fa-facebook-official"></i></li>
+                        <li>Twitter <i class="fa fa-twitter"></i></li>
+                        <li>Instagram <i class="fa fa-instagram"></i></li>
+                        <li>Linkedln <i class="fa fa-linkedin"></i></li>
+                    </ul>
+                </div>
+                </div>
+   
+            </div>
+
+        </div>
+
+
+
+
+    </body>
+</html>
